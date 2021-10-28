@@ -1,0 +1,21 @@
+import java.util.Scanner;
+public class Main
+{
+	public static void main(String[] args) {
+	    Scanner sc  = new Scanner(System.in);
+	    int arr_size = sc.nextInt(); // size of the array is declared here
+	    int arr[] = new int [arr_size]; // arr initialized
+	    int i;
+	    for(i = 0;i<arr_size;i++){
+	        arr[i] = sc.nextInt();// array inputed
+	    }
+	    int search_elem = sc.nextInt();//search elemnt inputed to search_elem
+	    int count = 0; // count initialized
+	    for(i = 0;i<arr_size;i++){
+	        if(arr[i] == search_elem){// conditional statement
+	            count++;
+	        }
+	    }
+	    System.out.print(count);//number of occurence
+	}
+}
